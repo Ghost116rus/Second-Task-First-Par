@@ -2,7 +2,6 @@
 #include <iostream>
 #include "MyStack.h"
 
-
 enum Options
 {
 	Init_stack = 1,

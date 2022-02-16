@@ -1,7 +1,6 @@
 #include "user_interface.h"
 
 
-
 int getValue(int condition, const char* string)
 {
 	while (true)													// цикл продолжается до тех пор, пока пользователь не введет корректное значение

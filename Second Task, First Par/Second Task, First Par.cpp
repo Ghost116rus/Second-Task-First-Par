@@ -14,5 +14,6 @@ int main()
 	menu(my_stack);
 
 	My_Stack::clean_memory(my_stack);
+
 }
 
