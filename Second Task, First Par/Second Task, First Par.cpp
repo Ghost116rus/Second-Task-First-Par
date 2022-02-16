@@ -8,34 +8,41 @@ struct stackElement
 {
 	stackElement* previous_element;
 	
-	// data my_data;
 	int data;
 };
 
-
+/*  Функция инициализации стека  */
 stackElement* init(int data)
 {
 	stackElement* temp = new stackElement;
 	temp->previous_element = NULL;
-	temp->data = name;
+	temp->data = data;
 
 
 	return temp;
 }
 
+/* Функция добавления элемента в конец*/
 void add(stackElement*& previous_ptr, int data)
 {
+	if (!(previous_ptr))
+	{
+		std::cout << "Стек не инициализирован, воспользуйтесь функцией init\n";
+		return;
+	}
+
+
 	stackElement* last_element = new stackElement();
 
 	last_element->previous_element = previous_ptr;
-
+	last_element->data = data;
 	
 
 	previous_ptr = last_element;
 }
 
 
-
+/* Функция удаления последнего элемента */
 void remove_at(stackElement*& last_ptr)
 {
 	if (!(last_ptr->previous_element))
@@ -58,22 +65,36 @@ void show(stackElement* last_el)
 
 	while (last_el)
 	{
-		std::cout << number++ << "-й элемент стека с конца\t" << "Данные: " << last_el->data << std::endl;
+		std::cout << number++ << "-й элемент стека\t" << "Данные: " << last_el->data << std::endl;
 		last_el = last_el->previous_element;
 	}
 }
 
+
+
+void clean_memory(stackElement*& stack)
+{
+	while (stack)
+	{
+		stackElement* previous_element = stack->previous_element;
+		delete stack;
+		stack = previous_element;
+	}
+}
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
 
 
-	stackElement* my_stack = init("Калеев Д.А");
-	add(my_stack, "Гайфуллин ДАмир ")
+	stackElement* my_stack = init(7);
+	add(my_stack, 28);
 	show(my_stack);
 	remove_at(my_stack);
 
 
+
+
+	clean_memory(my_stack);
 }
 
