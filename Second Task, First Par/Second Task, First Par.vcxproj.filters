@@ -13,18 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\MyStack">
+      <UniqueIdentifier>{e5062da6-1e2b-4110-ad29-d92226a892e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\User_interface">
+      <UniqueIdentifier>{08102a95-50dd-4873-aba7-8e11f6a79520}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Second Task, First Par.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="MyStack.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\MyStack</Filter>
+    </ClCompile>
+    <ClCompile Include="User_interface.cpp">
+      <Filter>Исходные файлы\User_interface</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyStack.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\MyStack</Filter>
+    </ClInclude>
+    <ClInclude Include="user_interface.h">
+      <Filter>Исходные файлы\User_interface</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

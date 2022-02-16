@@ -41,6 +41,12 @@ void My_Stack::remove_at(stackElement*& last_ptr)
 		delete last_ptr;
 
 		last_ptr = previous_element;
+		
+		std::cout << "”даление выполнено успешно\n";
+	}
+	else
+	{
+		std::cout << "Ќевозможно выполнить операцию, т.к стек не инициализирован\n";
 	}
 }
 
