@@ -18,7 +18,7 @@
     <ClCompile Include="Second Task, First Par.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="My_Stack.cpp">
+    <ClCompile Include="MyStack.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
