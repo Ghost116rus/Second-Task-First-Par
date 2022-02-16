@@ -5,14 +5,11 @@
 
 
 
-
-
 int main()
 {
 	setlocale(LC_ALL, "ru");
 
-
-	My_Stack::stackElement* my_stack;
+	My_Stack::stackElement* my_stack = NULL;
 
 	menu(my_stack);
 
