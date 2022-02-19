@@ -1,4 +1,3 @@
-#include <iostream>
 #include "MyStack.h"
 
 
@@ -16,11 +15,11 @@ stackElement* My_Stack::init(int data)
 
 void My_Stack::add(stackElement*& previous_ptr, int data)
 {
-	if (!(previous_ptr))						// на случай, если стек не инициализрован
-	{
-		std::cout << "Стек не инициализирован, воспользуйтесь функцией init\n";
-		return;
-	}
+	//if (!(previous_ptr))						// на случай, если стек не инициализрован
+	//{
+	//	std::cout << "Стек не инициализирован, воспользуйтесь функцией init\n";
+	//	return;
+	//}
 
 
 	stackElement* last_element = new stackElement();	// создаем новый элемент

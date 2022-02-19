@@ -134,4 +134,5 @@ void menu(My_Stack::stackElement*& stack)
 		user_choice = getValue(Menu_Commands, "Выберите команду: ");
 	}
 
+	std::cout << "Завершение работы\n";
 }
